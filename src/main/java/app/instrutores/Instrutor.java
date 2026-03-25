@@ -1,4 +1,4 @@
-package app.instrutor;
+package app.instrutores;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

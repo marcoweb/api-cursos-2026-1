@@ -1,4 +1,4 @@
-package app.instrutor;
+package app.instrutores;
 
 import java.util.List;
 

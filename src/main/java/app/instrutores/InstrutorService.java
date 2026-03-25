@@ -1,4 +1,4 @@
-package app.instrutor;
+package app.instrutores;
 
 import org.springframework.stereotype.Service;
 import org.springframework.beans.factory.annotation.Autowired;
