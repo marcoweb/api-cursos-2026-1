@@ -1,0 +1,19 @@
+@url = http://localhost:8080/instrutores
+@token =eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJGQVRFQyBBUEkiLCJzdWIiOiJhZG1pbiIsImV4cCI6MTc3NDQ4MTA4OH0.3s5Ty9ljeC7BFbqtT4_GoZF2d1kJR1pMU_1qkSbDpEY
+
+GET {{url}}
+Authorization: Bearer {{token}}
+
+###
+POST {{url}}
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "nome": "João Trindade",
+    "formacao": "Contabilidade"
+}
+
+###
+GET {{url}}/formacao/Contabilidade
+Authorization: Bearer {{token}}
