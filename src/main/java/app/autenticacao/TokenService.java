@@ -14,9 +14,14 @@ import com.auth0.jwt.exceptions.JWTVerificationException;
 
 import org.springframework.beans.factory.annotation.Value;
 
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.Configuration;
+
 @Service
+@Configuration
+@ConfigurationProperties(prefix="security.jwt")
 public class TokenService {
-    @Value("${security.jwt.secret}")
+    // @Value("${security.jwt.secret}")
     private String tokenKey;// = "123456789";
 
     private Instant expirationDate() {
